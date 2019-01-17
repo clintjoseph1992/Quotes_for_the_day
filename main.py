@@ -4,7 +4,7 @@ from httplib2 import Http
 from json import dumps
 import datetime
 
-
+## Variable Here
 gc_notification_url=<String: GoogleChatBot API URL Here>
 xMashapeKey=<String: X-Mashape-Key here>
 
@@ -22,8 +22,6 @@ def google_chat_notify(gcmsg,notification_url):
         print (response)
     except Exception,e:
         print ("Not able to post message : "+str(e))
-
-
 
 
 def main():
@@ -44,8 +42,6 @@ def main():
     #print (Quote_of_the_day)
     msg={'text':Quote_of_the_day}
     google_chat_notify(msg,gc_notification_url)
-
-
 
 
 if __name__=="__main__":
